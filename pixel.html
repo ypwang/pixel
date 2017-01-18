@@ -9,7 +9,11 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '233695400365990'); // Insert your pixel ID here.
 fbq('track', 'PageView');
+
 </script>
+
+
+
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=233695400365990&ev=PageView&noscript=1"
 /></noscript>
@@ -19,10 +23,10 @@ src="https://www.facebook.com/tr?id=233695400365990&ev=PageView&noscript=1"
 <body>
 <h1>
 <form name="myForm" action="demo_form.asp"
-onsubmit="fbq('track', 'AddToCart', {
+onsubmit="return fbq('track', 'AddToCart', {
 value: 3.50,
 currency: 'USD'
-});" method="post">
+})" method="post">
 Name: <input type="text" name="fname">
 <input type="submit" value="Submit">
 </form>
