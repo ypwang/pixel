@@ -18,7 +18,15 @@ src="https://www.facebook.com/tr?id=233695400365990&ev=PageView&noscript=1"
 </head>
 <body>
 <h1>
-Pixel
+<form name="myForm" action="demo_form.asp"
+onsubmit="fbq('track', 'AddToCart', {
+value: 3.50,
+currency: 'USD'
+});" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form>
 </h1>
 </body>
 </html>
+
